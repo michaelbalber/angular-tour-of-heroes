@@ -13,6 +13,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; // <-- NgModel lives here
 
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService }  from './in-memory-data.service';
+
 
 @NgModule({
   declarations: [
@@ -27,6 +30,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; // <-- NgModel lives her
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
+    HttpClientInMemoryWebApiModule.forRoot( InMemoryDataService, { dataEncapsulation: false } ), 
     NgbModule.forRoot()
   ],
   providers: [],
