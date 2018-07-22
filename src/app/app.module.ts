@@ -5,11 +5,14 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; // <-- NgModel lives here
+
 
 @NgModule({
   declarations: [
@@ -23,6 +26,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; // <-- NgModel lives her
     BrowserModule,
     FormsModule,
     AppRoutingModule,
+    HttpClientModule,
     NgbModule.forRoot()
   ],
   providers: [],
