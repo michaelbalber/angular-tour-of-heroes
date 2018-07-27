@@ -15,7 +15,10 @@ import { HeroesComponent }      from './heroes/heroes.component';
 import { HeroSearchComponent }  from './hero-search/hero-search.component';
 import { MessagesComponent }    from './messages/messages.component';
 
-import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
+import { PanelModule } from 'primeng/components/panel/panel';
+import { ButtonModule } from 'primeng/components/button/button';
+import { RadioButtonModule } from 'primeng/components/radioButton/radioButton';
+import { AccordionModule } from 'primeng/components/accordion/accordion';
 import {MenuItem} from 'primeng/api'; 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
@@ -26,6 +29,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     AppRoutingModule,
     HttpClientModule,
     AccordionModule,
+    PanelModule,
+    ButtonModule,
+    RadioButtonModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
